@@ -627,6 +627,44 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
     fill: var(--white);
 }
 
+/* Footer Form*/
+
+
+.footer-form-container {
+    margin-left: 80px;
+}
+
+.footer-form-caption {
+    margin-bottom: 16px;
+}
+
+.footer-form-input {
+    position: relative;
+}
+
+.footer-input {
+    border: 1px solid var(--white);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    background-color: transparent;
+    max-width: 264px;
+    max-height: 40px;
+
+    flex: 1;
+}
+
+.footer-form-field {
+    display: flex;
+}
+
+.footer-form-btn {
+    
+}
+
+
+
+
+
 /* Modal */
 
 .backdrop {
