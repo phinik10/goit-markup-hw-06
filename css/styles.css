@@ -802,7 +802,11 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 .modal-form-input-container {
     display: block;
     position: relative;
-    margin-bottom: 8px;
+    
+}
+
+.modal-form-input-container + .modal-form-input-container{
+    margin-top: 8px;
 }
 
 .form-comment {
@@ -845,9 +849,6 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
     border: 1px solid var(--primary-brend);
 }
 
-.form-comment {
-    margin-bottom: 16px;
-}
 
 .modal-form-message {
     font-size: 14px;
@@ -949,15 +950,20 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
     
 }
 
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .btn-form {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-
-    align-self: center;
-    min-width: 169px;
+    
+    width: 169px;
     
     padding: 16px 32px;
 
@@ -966,9 +972,9 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
     border: none;
     border-radius: 4px;
     color: var(--white);
+    cursor: pointer;
     
-    
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-form:hover,
