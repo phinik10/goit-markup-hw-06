@@ -786,6 +786,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
     color: var(--dark);
     text-align: center;
     margin-bottom: 16px;
+    margin-top: 0;
 }
 
 .modal-form-input-container label {
@@ -881,6 +882,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
     position: relative;
     margin-bottom: 24px;
     color: var(--subtle-text);
+
 }
 
 .link-privacy {
