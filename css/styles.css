@@ -638,19 +638,39 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
     margin-bottom: 16px;
 }
 
+.footer-button-container {
+    display: flex;
+    gap: 24px;
+}
+
 .footer-form-input {
     position: relative;
 }
 
 .footer-input {
+    font-size: 14px;
+    line-height: 1.57;
+    letter-spacing: 0.02em;
     border: 1px solid var(--white);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     background-color: transparent;
-    max-width: 264px;
-    max-height: 40px;
+    min-width: 264px;
+    height: 40px;
+    color: var(--white);
+    padding-left: 16px;
+}
 
-    flex: 1;
+.footer-input:focus {
+    outline: none;
+    border-color: var(--white);
+}
+
+.footer-input::placeholder {
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+
 }
 
 .footer-form-field {
@@ -658,7 +678,8 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 }
 
 .footer-form-btn {
-    
+    display: flex;
+
 }
 
 
