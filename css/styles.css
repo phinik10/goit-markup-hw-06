@@ -578,7 +578,11 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 
 .footer-container {
     display: flex;
-    gap: 120px;
+    
+}
+
+.socials-footer-container {
+    margin-left: 120px;
 }
 
 .socials-footer {
