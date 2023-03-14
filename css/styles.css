@@ -879,8 +879,17 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 
 .modal-form-check {
     position: relative;
+    display: flex;
+    align-items: center;
+    
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+
+    letter-spacing: 0.04em;
     margin-bottom: 24px;
     color: var(--subtle-text);
+    cursor: pointer;
 
 }
 
@@ -892,15 +901,18 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 
 
 .checkbox-input {
-    position: relative;
-    width: 16px;
-    height: 16px;
-    border: 1px solid var(--dark);
-    border-radius: 2px;
-    
+    appearance: none;
+}
+
+.checkbox-input {
+    position: absolute;
+    top: 100%;
+    left: 8px;
+    width: 1px;
+    height: 1px;
 }
  
-.checkbox-icon {
+/*.checkbox-icon {
     position: absolute;
     top: 0;
     left: 0;
@@ -908,16 +920,34 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
     height: 16px;
     fill: currentColor;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+}*/
 
 
 .checkbox-input:checked + .checkbox-icon {
-    opacity: 1;
+    background-image: url(../images/click.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-origin: border-box;
     background-color: var(--pressed-state);
     border: 1px solid var(--pressed-state);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.checkbox-icon {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+
+    border: 1.25px solid var(--dark);
+    border-radius: 2px;
+    cursor: pointer;
+    
+}
 
 .btn-form {
     font-family: "Roboto", sans-serif;
@@ -936,7 +966,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
     border: none;
     border-radius: 4px;
     color: var(--white);
-    cursor: pointer;
+    
     
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
