@@ -916,3 +916,30 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
     border: 1px solid var(--pressed-state);
 }
 
+
+
+.btn-form {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+
+    align-self: center;
+    min-width: 169px;
+    
+    padding: 16px 32px;
+
+    background: var(--primary-brend);
+    
+    border: none;
+    border-radius: 4px;
+    color: var(--white);
+    
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-form:hover,
+.btn-form:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
