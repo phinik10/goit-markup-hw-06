@@ -632,6 +632,9 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 
 /* Footer Form*/
 
+.subscribe-container {
+    display: block;
+}
 
 .footer-form {
     
@@ -640,21 +643,17 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 }
 
 .footer-form-caption {
-    display: block;
+    
     margin-bottom: 16px;
+    margin-left: 80px;
 }
 
 .input-subscribe {
     display: flex;
 }
 
-.footer-form-field {
-    display: flex;
-   
-}
 .footer-input{
     position: relative;
-
 }
 
 
