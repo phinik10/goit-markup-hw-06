@@ -635,20 +635,29 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 
 
 .footer-form {
+    
+    display: block;
     margin-left: 80px;
 }
 
 .footer-form-caption {
+    display: block;
     margin-bottom: 16px;
 }
 
-.footer-button-container {
+.input-subscribe {
     display: flex;
 }
 
-.footer-form-input {
-    position: relative;
+.footer-form-field {
+    display: flex;
+   
 }
+.footer-input{
+    position: relative;
+
+}
+
 
 .footer-input {
     font-size: 14px;
@@ -657,7 +666,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
     border: 1px solid var(--white);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
-    background-color: transparent;
+    background-color: var(--dark);
     min-width: 264px;
     height: 40px;
     color: var(--white);
@@ -677,13 +686,12 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 
 }
 
-.footer-form-field {
-    display: flex;
-}
 
 .footer-form-btn {
+    outline: none;
     display: flex;
     align-items: center;
+    flex-direction: row;
     padding: 8px 24px;
     gap: 16px;
     font-family: "Roboto", sans-serif;
@@ -790,8 +798,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 }
 
 .modal-form-input-container label {
-    display: flex;
-    flex-direction: column;
+    display: block;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.16;
@@ -801,7 +808,6 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 }
 
 .modal-form-input-container {
-    display: block;
     position: relative;
     
 }
@@ -855,7 +861,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
     font-size: 14px;
     line-height: 1.57;
     letter-spacing: 0.02em;
-
+    display: block;
     resize: none;
     width: 100%;
     height: 120px;
